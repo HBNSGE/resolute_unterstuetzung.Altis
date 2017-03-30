@@ -1,0 +1,15 @@
+//Mission Setup
+author = "HBNSGE";
+onLoadName = "Resolute Unterstützung 0.1";
+onLoadMission = "Nehmen sie Punkte mit Hilfe der Artillerieunterstützung ein."
+respawn = "NONE";
+saving = 0;
+
+//Medic Setup
+ReviveMode = 1;
+ReviveUnconsciousStateMode = 0;		//basic mode
+ReviveRequiredTrait = 1; 			//only medics can revice
+ReviveRequiredItems = 2; 			//medkit or first aid kit is required
+ReviveRequiredItemsFakConsumed = 1; //first aid kit is consumed
+ReviveMedicSpeedMultiplier = 2;		//medics revive twice as fast a normal players
+ReviveBleedOutDelay = 180; //time until bleed out
