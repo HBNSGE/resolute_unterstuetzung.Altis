@@ -43,4 +43,12 @@ class Params
 		default = 1500;
 		file = "scripts\setViewDistance.sqf"; // (Optional) Script called when player joins, selected value is passed as an argument
 	};	
+	
+	class Artilleriecomputer
+	{
+		title = AC aktivieren/deaktivieren;
+		texts[] = {aktivieren,deaktivieren};
+		values[] = {1,0};
+		default = 1;
+	};	
 };	
