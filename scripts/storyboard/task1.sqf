@@ -13,11 +13,6 @@ sleep 5;
 sleep 5;
 ["taskw1", "ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
-/* //sub tasks
-sleep 5;
-[blufor,["taskws1","taskw1"],["Erreichen Sie Checkpoint Alpha","Checkpoint Alpha",""],getMarkerPos "alpha","CREATED",3,true] call BIS_fnc_taskCreate;
-sleep 5;
-*/
 
 
 
