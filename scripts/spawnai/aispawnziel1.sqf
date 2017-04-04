@@ -13,3 +13,29 @@ g1f3 = [_position findEmptyPosition [10,250], random 360, "O_MRAP_02_gmg_F", g1]
 //Verhalten der KI, KI ist trotzdem daehhhhhmlich ;)
 g1 setBehaviour "AWARE";
 g1 setCombatMode "RED";
+
+_wpg1 =g1 addWaypoint [getmarkerpos "wp1", 1];
+_wpg2 =g1 addWaypoint [getmarkerpos "wp2", 2];
+_wpg3 =g1 addWaypoint [getmarkerpos "wp3", 3];
+_wpg4 =g1 addWaypoint [getmarkerpos "wp4", 4];
+_wpg5 =g1 addWaypoint [getmarkerpos "wp1", 5];
+
+_wpg1 setWaypointType "MOVE";
+_wpg2 setWaypointType "MOVE";
+_wpg3 setWaypointType "MOVE";
+_wpg4 setWaypointType "MOVE";
+_wpg5 setWaypointType "CYCLE";
+
+_wpg1 setWaypointBehaviour "AWARE";
+_wpg2 setWaypointBehaviour "AWARE";
+_wpg3 setWaypointBehaviour "AWARE";
+_wpg4 setWaypointBehaviour "AWARE";
+_wpg5 setWaypointBehaviour "AWARE";
+
+_wpg1 setWaypointSpeed "NORMAL";
+_wpg2 setWaypointSpeed "NORMAL";
+_wpg3 setWaypointSpeed "NORMAL";
+_wpg4 setWaypointSpeed "NORMAL";
+_wpg5 setWaypointSpeed "NORMAL";
+
+g1 setCurrentWaypoint [g1, 1];
