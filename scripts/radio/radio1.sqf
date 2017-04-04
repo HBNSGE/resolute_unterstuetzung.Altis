@@ -1,0 +1,12 @@
+﻿sleep 35;
+opb sideChat "Ihre Ziele wurden aktualisiert. Überprüfen Sie Ihre Missionsparameter.";
+sleep 5;
+opb sideChat "Sichern Sie zunächst den Ort Syrta.";
+sleep 5;
+opb sideChat "Dann rücken Sie zum Ort Abdera vor und sichern Sie diesen.";
+sleep 5;
+opb sideChat "Sichern Sie dann das Flugfeld im Norden. Hier hat die Fernmeldeeinheit eine hohe Anzahl gegenerischer Fahrzeuge und Infantrie gesichtet.";
+sleep 15;
+opb sideChat "Überprüfen Sie zu dem die Position 'Unbekannt', sie ist auf Ihrer Karte eingezeichnet.";
+sleep 5;
+opb sideChat "Wahren Sie zu jeder Zeit Funkdisziplin und nutzen Sie die Artillerie. OPB out.";
