@@ -3,6 +3,9 @@ author = "HBNSGE";
 onLoadName = "Resolute Unterstuetzung 0.1";
 onLoadMission = "Nehmen sie Punkte mit Hilfe der Artillerieunterstuetzung ein."
 respawn = "BASE";
+respawnDelay = 30;
+respawnOnStart = 0;
+respawnTemplates[] = {"MenuPosition"};
 
 class Header
 {
@@ -42,7 +45,7 @@ class Params
 	
 		class Zeitbeschleunigung
 	{
-		title = Echtzeit;
+		title = Zeitbeschleunigung;
 		texts[] = {Echtzeit, 5x, 10x, 20x};
 		values[] = {1,5,10,20};
 		default = 1;
