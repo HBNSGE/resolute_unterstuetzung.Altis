@@ -5,6 +5,7 @@ if (isServer) then {
 	
 	nul = execVM "scripts\storyboard\task1.sqf";    		//Tasks for WEST
 	nul = execVM "scripts\spawnai\aispawnziel1.sqf";
+
 	
 	
 	
@@ -15,3 +16,4 @@ if (!isDedicated) then {
 	
 
 };
+	_null = [] call BT_fnc_initBtFob;

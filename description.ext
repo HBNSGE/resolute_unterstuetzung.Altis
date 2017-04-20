@@ -14,6 +14,10 @@ class Header
 	maxPlayers = 12; //max # of players the mission supports
 };
 
+class CfgFunctions {
+	#include "scripts\bt_fob\cfgFunctionsBT_FOB.hpp"
+};
+
 class Params
 {
 	class Daytime
@@ -51,3 +55,4 @@ class Params
 		default = 1;
 	};	
 };	
+

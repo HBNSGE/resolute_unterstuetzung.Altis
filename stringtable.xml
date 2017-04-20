@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Resolute Unterstützung">
+	<Package name="FOB">
+		<Container name="BT FOB">
+			<Key ID="str_bt_fob_build_fob">
+				<Original>Build FOB</Original>
+				<English>Build FOB</English>
+				<German>VOB aufbauen</German>
+			</Key>
+			<Key ID="str_bt_fob_unbuild_fob">
+				<Original>Unbuild FOB</Original>
+				<English>Unbuild FOB</English>
+				<German>VOB abbauen</German>
+			</Key>
+			<Key ID="str_bt_fob_units_have_to_disembark">
+				<Original>All units except the driver must have left the vehicle in order to build the FOB.</Original>
+				<English>All units except the driver must have left the vehicle in order to build the FOB.</English>
+				<German>Um die VOB aufbauen zu können müssen alle Einheiten bis auf den Fahrer das Fahrzeug verlassen haben.</German>
+			</Key>
+			<Key ID="str_bt_fob_engine_has_to_be_off">
+				<Original>The engine must be switched off and the vehicle has to be stopped to build up the FOB.</Original>
+				<English>The engine must be switched off and the vehicle has to be stopped to build up the FOB.</English>
+				<German>Der Motor muss ausgeschaltet sein und das Fahrzeug muss stehen, um die VOB aufzubauen.</German>
+			</Key>
+			<Key ID="str_bt_fob_deploy_msg">
+				<Original>Unloading %1 ...</Original>
+				<English>Unloading %1 ...</Original>
+				<German>Entlade %1 ...</Original>
+			</Key>
+			<Key ID="str_bt_fob_redeploy_msg">
+				<Original>Loading %1 ...</Original>
+				<English>Loading %1 ...</English>
+				<German>Verlade %1 ...</German>
+			</Key>
+			<Key ID="str_bt_fob_you_start_building">
+				<Original>You have started the construction of a FOB near %1.</Original>
+				<English>You have started the construction of a FOB near %1.</English>
+				<German>Sie haben den Aufbau einer VOB in der Nähe von %1 begonnen.</German>
+			</Key>
+			<Key ID="str_bt_fob_you_finished_building">
+				<Original>You have completed the construction of a FOB near %1.</Original>
+				<English>You have completed the construction of a FOB near %1.</English>
+				<German>Sie haben den Bau einer VOB in der Nähe von %1 abgeschlossen.</German>
+			</Key>
+			<Key ID="str_bt_fob_start_building">
+				<Original>%1 starts to build up a Forward Operating Base near %2.</Original>
+				<English>%1 starts to build up a Forward Operating Base near %2.</English>
+				<German>%1 hat den Aufbau einer VOB in der Nähe von %2 begonnen.</German>
+			</Key>
+			<Key ID="str_bt_fob_finished_building">
+				<Original>A Forward Operating Base has been built up near %1.</Original>
+				<English>A Forward Operating Base has been built up near %1.</English>
+				<German>In der Nähe von %1 wurde eine vorgeschobene Operationsbasis fertiggestellt.</German>
+			</Key>
+			<Key ID="str_bt_fob_you_start_unbuilding">
+				<Original>You have begun dismantling the FOB near 1%.</Original>
+				<English>You have begun dismantling the FOB near 1%.</English>
+				<German>Sie haben den Rückbau der VOB in der Nähe von %1 begonnen.</German>
+			</Key>
+			<Key ID="str_bt_fob_you_finished_unbuilding">
+				<Original>You have complete the dismantling of the FOB near 1%.</Original>
+				<English>You have complete the dismantling of the FOB near 1%.</English>
+				<German>Sie haben den Rückbau der VOB in der Nähe von %1 abgeschlossen.</German>
+			</Key>
+			<Key ID="str_bt_fob_start_unbuilding">
+				<Original>%1 starts to dismount the Forward Operating Base near %2.</Original>
+				<English>%1 starts to dismount the Forward Operating Base near %2.</English>
+				<German>%1 beginnt mit dem Abbau Ihrer VOB in der Nähe von %2.</German>
+			</Key>
+			<Key ID="str_bt_fob_finished_unbuilding">
+				<Original>Your FOB near %1 has been dismounted.</Original>
+				<English>Your FOB near %1 has been dismounted.</English>
+				<German>Ihre VOB in der Nähe von %1 wurde abgebaut.</German>
+			</Key>
+		</Container>
+	</Package>
+</Project>	
