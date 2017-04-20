@@ -2603,7 +2603,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={7849.3262,0,16668.398};
-			name="marker_4";
+			name="respawn_west";
 			text="BW Arsenal";
 			type="hd_dot";
 			id=122;
@@ -3779,7 +3779,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7847.1494,252.83228,16650.418};
-				angles[]={-0,0.47188917,0};
+				angles[]={0,0.47188917,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3795,7 +3795,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7847.1577,252.83228,16651.791};
-				angles[]={-0,0.47188917,0};
+				angles[]={0,0.47188917,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3811,7 +3811,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7847.3936,252.83228,16653.078};
-				angles[]={-0,0.47188917,0};
+				angles[]={0,0.47188917,0};
 			};
 			side="Empty";
 			flags=4;

@@ -2,19 +2,7 @@
 author = "HBNSGE";
 onLoadName = "Resolute Unterstuetzung 0.1";
 onLoadMission = "Nehmen sie Punkte mit Hilfe der Artillerieunterstuetzung ein."
-respawn = "NONE";
-//saving = 0;
-//disabledAI = 1;
-
-//Medic Setup
-ReviveMode = 1;
-ReviveUnconsciousStateMode = 0;		//basic mode
-ReviveRequiredTrait = 0; 			//medic trait it not required
-ReviveRequiredItems = 2; 			//medkit or first aid kit is required
-ReviveRequiredItemsFakConsumed = 1; //first aid kit is consumed
-ReviveDelay = 6;					//time needed to revive someone (in secs)
-ReviveMedicSpeedMultiplier = 2;		//medics revive twice as fast a normal players
-ReviveBleedOutDelay = 180; 			//time until bleed out
+respawn = "BASE";
 
 class Header
 {
@@ -25,11 +13,6 @@ class Header
 
 class Params
 {
-//	#include "\a3\Functions_F_MP_Mark\Params\paramTimeAcceleration.hpp"
-//	#define TIMEACCELERATION_DEFAULT	10
-	#include "\a3\functions_f\Params\paramWeather.hpp"
-	#define WEATHER_DEFAULT		40
-	
 	class Daytime
 	{
 		title = Daytime;
@@ -54,6 +37,14 @@ class Params
 		title = AC aktivieren/deaktivieren;
 		texts[] = {aktivieren,deaktivieren};
 		values[] = {1,0};
+		default = 1;
+	};	
+	
+		class Zeitbeschleunigung
+	{
+		title = Echtzeit;
+		texts[] = {Echtzeit, 5x, 10x, 20x};
+		values[] = {1,5,10,20};
 		default = 1;
 	};	
 };	
