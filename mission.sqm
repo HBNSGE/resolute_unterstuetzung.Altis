@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=209;
+		nextID=211;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7875.9419,278.97159,16611.09};
-		dir[]={-0.18795526,-0.6621412,0.72548872};
-		up[]={-0.16606396,0.74936271,0.64098686};
-		aside[]={0.96808177,1.1773081e-006,0.25080487};
+		pos[]={7895.4624,276.00504,16621.449};
+		dir[]={-0.49581668,-0.31691954,0.80859876};
+		up[]={-0.16568831,0.94843233,0.27020901};
+		aside[]={0.85253793,7.9363235e-007,0.52275872};
 	};
 };
 binarizationWanted=0;
@@ -66,7 +66,8 @@ addons[]=
 	"ace_hearing",
 	"A3_Modules_F_Multiplayer",
 	"A3_Soft_F_Beta_Truck_01",
-	"ace_cargo"
+	"ace_cargo",
+	"A3_Modules_F_Intel"
 };
 class AddonsMetaData
 {
@@ -326,26 +327,48 @@ class Mission
 	};
 	class Entities
 	{
-		items=109;
+		items=111;
 		class Item0
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7875.5972,254.71768,16674.949};
-				angles[]={0.011995304,0,6.2711902};
+				position[]={7875.5977,254.71799,16674.949};
+				angles[]={0.011990411,0,6.2711945};
 			};
 			side="West";
 			flags=4;
 			class Attributes
 			{
 				fuel=0;
-				init="this addAction [""AI verlässt Fahrzeug"",{{ unassignVehicle _x } forEach crew at2}];";
+				init="this addAction [""AI verlässt Fahrzeug"",{atc21 leaveVehicle at2;atc22 leaveVehicle at2;atc23 leaveVehicle at2;}];";
 				name="at2";
 			};
 			id=1;
 			type="B_MBT_01_arty_F";
-			atlOffset=-0.00030517578;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_MXC_F"",""FirstAidKit""],[2,10]],[[""SmokeShell"",""SmokeShellBlue"",""30Rnd_65x39_caseless_mag""],[2,2,4]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1
 		{
@@ -359,8 +382,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7862.647,252.72278,16668.189};
-						angles[]={6.211309,0,6.2060056};
+						position[]={7862.4238,252.73894,16668.396};
+						angles[]={6.2113123,0,6.206007};
 					};
 					side="West";
 					flags=4;
@@ -370,6 +393,7 @@ class Mission
 					};
 					id=7;
 					type="B_crew_F";
+					atlOffset=-0.01600647;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -418,8 +442,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7862.647,252.72278,16668.189};
-						angles[]={6.211309,0,6.2060056};
+						position[]={7862.4238,252.73894,16668.396};
+						angles[]={6.2113123,0,6.206007};
 					};
 					side="West";
 					flags=6;
@@ -429,6 +453,7 @@ class Mission
 					};
 					id=8;
 					type="B_crew_F";
+					atlOffset=-0.01600647;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -477,8 +502,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7862.647,252.72278,16668.189};
-						angles[]={6.211309,0,6.2060056};
+						position[]={7862.4238,252.73894,16668.396};
+						angles[]={6.2113123,0,6.206007};
 					};
 					side="West";
 					flags=4;
@@ -488,6 +513,7 @@ class Mission
 					};
 					id=9;
 					type="B_crew_F";
+					atlOffset=-0.01600647;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -579,27 +605,50 @@ class Mission
 				};
 			};
 			id=5;
-			atlOffset=-0.016143799;
+			atlOffset=-0.01600647;
 		};
 		class Item2
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7862.647,255.61548,16668.139};
-				angles[]={6.211309,0,6.2060056};
+				position[]={7862.6465,255.61562,16668.139};
+				angles[]={6.2113123,0,6.206007};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
 				fuel=0;
-				init="this addAction [""AI verlässt Fahrzeug"",{{ unassignVehicle _x } forEach crew at1}];";
+				init="this addAction [""AI verlässt Fahrzeug"",{atc11 leaveVehicle at1;atc12 leaveVehicle at1;atc13 leaveVehicle at1;}];";
 				name="at1";
 			};
 			id=6;
 			type="B_MBT_01_arty_F";
-			atlOffset=-0.016143799;
+			atlOffset=-0.01600647;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_MXC_F"",""FirstAidKit""],[2,10]],[[""SmokeShell"",""SmokeShellBlue"",""30Rnd_65x39_caseless_mag""],[2,2,4]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item3
 		{
@@ -1448,8 +1497,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7875.5933,251.825,16674.992};
-						angles[]={0.011995304,0,6.2711902};
+						position[]={7875.563,251.8257,16674.965};
+						angles[]={0.011990411,0,6.2711945};
 					};
 					side="West";
 					flags=6;
@@ -1507,8 +1556,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7875.5933,251.825,16674.992};
-						angles[]={0.011995304,0,6.2711902};
+						position[]={7875.563,251.8257,16674.965};
+						angles[]={0.011990411,0,6.2711945};
 					};
 					side="West";
 					flags=4;
@@ -1566,8 +1615,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7875.5933,251.825,16674.992};
-						angles[]={0.011995304,0,6.2711902};
+						position[]={7875.563,251.8257,16674.965};
+						angles[]={0.011990411,0,6.2711945};
 					};
 					side="West";
 					flags=4;
@@ -1668,7 +1717,6 @@ class Mission
 				};
 			};
 			id=25;
-			atlOffset=-0.00030517578;
 		};
 		class Item8
 		{
@@ -4745,6 +4793,225 @@ class Mission
 					};
 				};
 				nAttributes=10;
+			};
+		};
+		class Item109
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8917.9346,152.80305,16823.727};
+			};
+			id=209;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Situation";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Folgende Situation liegt Ihnen vor: " \n "<br/> " \n "Nördlich ihrer Basis sind noch drei verbleibende Stellungen der OPFOR-Einheiten. " \n "<br/> " \n "<img image='images\diary001.jpg' width='390' height='270'/> " \n "<br/> " \n "Sie besitzen die Möglichkeit Artillerieunterstützung anzufordern und mit der VOB(LKW) eine mobile Basis einzurichten.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item110
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8954.1211,150.16881,16821.461};
+			};
+			id=210;
+			type="ModuleCreateDiaryRecord_F";
+			atlOffset=0.095016479;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Mission";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ihre Mission ist es: " \n "<br/> " \n "Erreichen und erobern Sie die zwei Ortschaften nördlich ihrer Basis. Stellen Sie sich auf Infantrie und gepanzerte Fahrzeuge ein. " \n "<br/> " \n "Anschließend nehmen Sie das Flugfeld ein, um die Versorgung der Opfor-Einheiten zu kappen. " \n "<br/> " \n "<img image='images\diary002.jpg' width='390' height='270'/>";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 	};
