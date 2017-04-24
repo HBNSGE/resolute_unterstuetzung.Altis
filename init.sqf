@@ -7,9 +7,10 @@ if (isServer) then {
 	
 	nul = execVM "scripts\storyboard\task1.sqf";    		//Tasks for WEST
 	nul = execVM "scripts\spawnai\aispawnziel1.sqf";
+	_null = [] call BT_fnc_initBtFob;
 };
 //Scripts run by player
 if (!isDedicated) then {
 	nul = execVM "scripts\radio\radio1.sqf";
 };
-	_null = [] call BT_fnc_initBtFob;
+	

@@ -73,6 +73,10 @@
 "BWA3_MG5_Tan",
 "BWA3_G82",
 
+//vanilla Arma
+"srifle_EBR_F",
+"arifle_AK12_F",
+
 //pistols
 "BWA3_P8",
 "BWA3_MP7",
@@ -158,7 +162,14 @@
 "ACE_1Rnd_82mm_Mo_HE_Guided",
 "ACE_1Rnd_82mm_Mo_HE_LaserGuided",
 "BWA3_Pzf3_IT",
-"BWA3_RGW90_HH" 
+"BWA3_RGW90_HH",
+"1Rnd_HE_Grenade_shell",
+"3Rnd_HE_Grenade_shell",
+"1Rnd_Smoke_Grenade_shell",
+"3Rnd_Smoke_Grenade_shell",
+//arma vanilla
+"20Rnd_762x51_Mag",
+"30Rnd_762x39_Mag_F"
 ],true] call BIS_fnc_addVirtualMagazineCargo;
 
 //--- Items and Stuff
@@ -227,6 +238,11 @@
 "BWA3_muzzle_snds_G28",
 "BWA3_muzzle_snds_G36",
 "BWA3_muzzle_snds_MP7",
+//arma vanilla
+"muzzle_snds_B_khk_F",
+"muzzle_snds_B_snd_F",
+"bipod_01_F_khk",
+"bipod_01_F_blk",
 
 // Grenades
 
