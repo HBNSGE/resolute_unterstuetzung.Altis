@@ -8,7 +8,7 @@ g1f3 = [_position findEmptyPosition [10,250], random 360, "O_Truck_03_covered_F"
 sleep 15;
 g1f2 = [_position findEmptyPosition [10,250], random 360, "O_MRAP_02_gmg_F", g1] call bis_fnc_spawnvehicle;
 sleep 15;
-g1f3 = [_position findEmptyPosition [10,250], random 360, "O_MRAP_02_gmg_F", g1] call bis_fnc_spawnvehicle;
+g1f3 = [_position findEmptyPosition [10,250], random 360, "O_MRAP_02_hmg_F", g1] call bis_fnc_spawnvehicle;
 
 //Verhalten der KI, KI ist trotzdem daehhhhhmlich ;)
 g1 setBehaviour "AWARE";

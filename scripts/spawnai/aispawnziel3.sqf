@@ -11,9 +11,9 @@ g4f1 = [_positiont1 findEmptyPosition [10,250], random 360, "O_MBT_02_cannon_F",
 sleep 15;
 g5f1 = [_positiont2 findEmptyPosition [10,250], random 360, "O_MBT_02_cannon_F", g5] call bis_fnc_spawnvehicle;
 sleep 15;
-g4f2 = [_position findEmptyPosition [10,250], random 360, "O_MRAP_02_gmg_F", g4] call bis_fnc_spawnvehicle;
+g4f2 = [_position findEmptyPosition [10,250], random 360, "O_MRAP_02_hmg_F", g4] call bis_fnc_spawnvehicle;
 sleep 15;
-g5f2 = [_position findEmptyPosition [10,250], random 360, "O_MRAP_02_gmg_F", g5] call bis_fnc_spawnvehicle;
+g5f2 = [_position findEmptyPosition [10,250], random 360, "O_MRAP_02_hmg_F", g5] call bis_fnc_spawnvehicle;
 sleep 15;
 g4f3 = [_position findEmptyPosition [10,250], random 360, "O_G_Offroad_01_armed_F", g4] call bis_fnc_spawnvehicle;
 sleep 15;

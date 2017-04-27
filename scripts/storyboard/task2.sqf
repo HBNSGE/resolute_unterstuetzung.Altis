@@ -12,11 +12,3 @@
 if (isServer) then {
 	nul = execVM "scripts\spawnai\aispawnziel2.sqf";				//Enable or disable the artillery computer
 };
-
-
-
-
-
-
-
-

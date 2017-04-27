@@ -9,4 +9,4 @@ opb sideChat "Sichern Sie dann das Flugfeld im Norden. Hier hat die Fernmeldeein
 sleep 15;
 opb sideChat "Überprüfen Sie zu dem die Position 'Unbekannt', sie ist auf Ihrer Karte eingezeichnet.";
 sleep 5;
-opb sideChat "Wahren Sie zu jeder Zeit Funkdisziplin und nutzen Sie die Artillerie. OPB out.";
+opb sideChat "Wahren Sie zu jeder Zeit Funkdisziplin und nutzen Sie die Artillerie. OPB Ende.";
