@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7870.8945,290.13403,16585.729};
-		dir[]={-0.094189487,-0.41560394,0.90469652};
-		up[]={-0.043039482,0.90953708,0.41339055};
-		aside[]={0.99466121,6.8442023e-007,0.10355564};
+		pos[]={7869.8896,273.36359,16647.727};
+		dir[]={-0.82005882,-0.3917906,0.4172278};
+		up[]={-0.34921402,0.92004532,0.17767146};
+		aside[]={0.45347866,6.5202767e-007,0.89130849};
 	};
 };
 binarizationWanted=0;
@@ -2099,7 +2099,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="if (isServer) then {this addAction [""Missionsueberpruefung"",{nul = execVM ""scripts\storyboard\alltaskscompleted.sqf"";}]; " \n "  " \n "}; ";
+				init="this addAction [""Missionsueberpruefung"",{nul = execVM ""scripts\storyboard\alltaskscompleted.sqf"";}];  ";
 			};
 			id=50;
 			type="Land_TripodScreen_01_dual_v1_F";
@@ -6686,11 +6686,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=14;
+			nextID=13;
 		};
 		class Links
 		{
-			items=14;
+			items=13;
 			class Item0
 			{
 				linkID=0;
@@ -6724,8 +6724,8 @@ class Mission
 			class Item3
 			{
 				linkID=3;
-				item0=95;
-				item1=12;
+				item0=83;
+				item1=200;
 				class CustomData
 				{
 					type="Sync";
@@ -6734,7 +6734,7 @@ class Mission
 			class Item4
 			{
 				linkID=4;
-				item0=83;
+				item0=86;
 				item1=200;
 				class CustomData
 				{
@@ -6744,7 +6744,7 @@ class Mission
 			class Item5
 			{
 				linkID=5;
-				item0=86;
+				item0=89;
 				item1=200;
 				class CustomData
 				{
@@ -6754,7 +6754,7 @@ class Mission
 			class Item6
 			{
 				linkID=6;
-				item0=89;
+				item0=92;
 				item1=200;
 				class CustomData
 				{
@@ -6764,7 +6764,7 @@ class Mission
 			class Item7
 			{
 				linkID=7;
-				item0=92;
+				item0=70;
 				item1=200;
 				class CustomData
 				{
@@ -6774,8 +6774,8 @@ class Mission
 			class Item8
 			{
 				linkID=8;
-				item0=70;
-				item1=200;
+				item0=208;
+				item1=206;
 				class CustomData
 				{
 					type="Sync";
@@ -6784,18 +6784,18 @@ class Mission
 			class Item9
 			{
 				linkID=9;
-				item0=208;
-				item1=206;
+				item0=280;
+				item1=281;
 				class CustomData
 				{
-					type="Sync";
+					type="WaypointActivation";
 				};
 			};
 			class Item10
 			{
 				linkID=10;
 				item0=280;
-				item1=281;
+				item1=292;
 				class CustomData
 				{
 					type="WaypointActivation";
@@ -6804,8 +6804,8 @@ class Mission
 			class Item11
 			{
 				linkID=11;
-				item0=280;
-				item1=292;
+				item0=296;
+				item1=298;
 				class CustomData
 				{
 					type="WaypointActivation";
@@ -6814,16 +6814,6 @@ class Mission
 			class Item12
 			{
 				linkID=12;
-				item0=296;
-				item1=298;
-				class CustomData
-				{
-					type="WaypointActivation";
-				};
-			};
-			class Item13
-			{
-				linkID=13;
 				item0=296;
 				item1=297;
 				class CustomData
