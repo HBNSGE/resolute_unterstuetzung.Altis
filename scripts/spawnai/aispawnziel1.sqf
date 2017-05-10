@@ -1,5 +1,6 @@
 //Zielposition ermittlen
 _position = getmarkerpos "ziel1";
+_positionextra = getmarkerpos "aispawnextra";
 
 //Einheiten Spawnen
 g1 = [_position, EAST, 8, [], [], [0.4,0.5]] call BIS_fnc_spawnGroup;
@@ -39,3 +40,8 @@ _wpg4 setWaypointSpeed "NORMAL";
 _wpg5 setWaypointSpeed "NORMAL";
 
 g1 setCurrentWaypoint [g1, 1];
+
+//extraspawn
+g1extra = [_positionextra, EAST, 5, [], [], [0.4,0.5]] call BIS_fnc_spawnGroup;
+g1extra setBehaviour "SAFE";
+g1extra setCombatMode "YELLOW";
